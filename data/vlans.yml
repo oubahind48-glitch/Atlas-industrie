@@ -1,4 +1,4 @@
-﻿# VLAN and addressing plan of Atlas Industrie.
+# VLAN and addressing plan of Atlas Industrie.
 # Replace fd3a:7c1e:9b52 with the prefix drawn in step 3.1.
 # The IPv6 subnet field copies the VLAN number in hexadecimal:
 # a readability convention, not a numeric equality (field 20 is worth 32).
