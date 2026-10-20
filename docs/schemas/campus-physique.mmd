@@ -1,0 +1,19 @@
+﻿graph LR
+    subgraph LOCA [Technical room A, building A]
+        CCA[CC-A]
+        UPSA[UPS A]
+    end
+    subgraph LOC_B [Technical room B, building B]
+        CCB[CC-B]
+        UPSB[UPS B]
+    end
+    UPSA --- CCA
+    UPSB --- CCB
+    CCA ===|"route nord"| JONC[Chambre de tirage]
+    JONC ===|"route nord"| CCB
+    CCA ===|"route sud"| JONC
+    JONC ===|"route sud"| CCB
+Les deux routes (nord et sud) se rejoignent dans la chambre de tirage sous la cour.
+C'est le common cause : un seul coup de pelleteuse coupe les deux fibres.
+La redondance théorique de 99,99 % tombe à 99,9 % en pratique.
+UPS séparées par bâtiment.
