@@ -1,0 +1,18 @@
+﻿graph TD
+    subgraph Batiment_A [Batiment A - Siege]
+        CCA[CC-A]
+        FWA[FW-A]
+        ACCA01[ACC-A-01]
+        CCA --- FWA
+        CCA --- ACCA01
+    end
+
+    subgraph Batiment_B [Batiment B - Production]
+        CCB[CC-B]
+        FWB[FW-B]
+        ACCB01[ACC-B-01]
+        CCB --- FWB
+        CCB --- ACCB01
+    end
+
+    CCA ===|2 fibres sur routes distinctes| CCB
